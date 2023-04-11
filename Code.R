@@ -1,19 +1,12 @@
-#install circlize
-#load circlize
+library(circlize)
 
-#generates randome data and export
-#set.seed(500)  #repeat the random table
 
-data = matrix(sample(24, 24), 4, 6) 
-rownames(data) = paste0("S", 1:4)
-colnames(data) = paste0("E", 1:6)
-data
+matrix <- matrix(c(86,78,87,98,65,77,41,7,81,62,32,28,40,19,72,29,69,74,13,24,81,25,91,50,49,5,71,57,4,76,5,64,41,25,77,29,88,86,53,1,81,62,95,32,47,34,79,47,81,68,97,44,50,47,10,62,29,43,27,86,71,46,87,29,12,92,86,86,84,51,69,23,29,2,30,35,95,63,80,1,86,20,33,65,27,33,15,70,40,40)
+, nrow = 9, dimnames = list(c("ChrC01", "ChrC02", "ChrC03", "ChrC04","ChrC05", "ChrC06","ChrC07", "ChrC08","ChrC09"), c("ChrA01","ChrA02","ChrA03","ChrA04","ChrA05","ChrA06","ChrA07","ChrA08","ChrA09","ChrA10")))
+chordDiagram(matrix)
 
-write.table(data, file = "Aria.csv",sep=",")
 
-#read csv
-# copy/paste your working directory
-mydata <- read.csv("C:/Users/00090473/RWD/aria.csv", header=TRUE)
 
-#chord diagram
-chordDiagram(mydata)
+matrix <- matrix(c(86,78,87,98,65,77,41,7,81,62,32,28,40,19,72,29,69,74,13,24,81,25,91,50,49,5,71,57,4,76,5,64,41,25,77,29,88,86,53,1,81,62,95,32,47,34,79,47,81,68,97,44,50,47,10,62,29,43,27,86,71,46,87,29,12,92,86,86,84,51,69,23,29,2,30,35,95,63,80,1,86,20,33,65,27,33,15,70,40,40)
+, nrow = 10, dimnames = list(c("ChrA01","ChrA02","ChrA03","ChrA04","ChrA05","ChrA06","ChrA07","ChrA08","ChrA09","ChrA10"), c("ChrC01", "ChrC02", "ChrC03", "ChrC04","ChrC05", "ChrC06","ChrC07", "ChrC08","ChrC09")))
+chordDiagram(matrix)
