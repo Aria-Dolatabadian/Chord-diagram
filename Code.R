@@ -2,7 +2,7 @@
 #load circlize
 
 #generates randome data and export
-#set.seed(500)  #repeat the randome table
+#set.seed(500)  #repeat the random table
 
 data = matrix(sample(24, 24), 4, 6) 
 rownames(data) = paste0("S", 1:4)
