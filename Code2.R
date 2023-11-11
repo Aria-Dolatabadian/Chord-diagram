@@ -2,7 +2,6 @@ library(circlize)
 
 my_data <- matrix(c(10, 20, 30, 14, 25, 26, 47, 58, 49, 10, 11, 12, 13, 54, 15), 5, 3)
 
-
 rownames(my_data) <- paste0("Row", 1:5)
 colnames(my_data) <- paste0("Col", 1:3)
 
