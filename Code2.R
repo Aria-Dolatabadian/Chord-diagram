@@ -14,7 +14,6 @@ df <- data.frame(from = rep(rownames(my_data), ncol(my_data)),
 print(df)
 
 
-
 colors <- c(Col1 = "lightgrey", Col2 = "yellow",
             Col3 = "darkgrey", Row1 = "#FF410D",
             Row2 = "#6EE2FF", Row3 = "#F7C530",
